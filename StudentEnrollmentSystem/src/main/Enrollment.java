@@ -1,3 +1,5 @@
+package main;
+
 public class Enrollment {
     private Course course;
     private int section;
