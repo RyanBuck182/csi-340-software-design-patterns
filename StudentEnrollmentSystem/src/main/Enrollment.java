@@ -13,20 +13,20 @@ public class Enrollment {
         this.grade = grade;
     }
 
-    public int getSection() {
-        return section;
-    }
-
-    public void setSection(int section) {
-        this.section = section;
-    }
-
     public Course getCourse() {
         return course;
     }
 
     public void setCourse(Course course) {
         this.course = course;
+    }
+
+    public int getSection() {
+        return section;
+    }
+
+    public void setSection(int section) {
+        this.section = section;
     }
 
     public String getSemester() {
