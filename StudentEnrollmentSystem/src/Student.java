@@ -1,13 +1,15 @@
 import java.util.List;
 
 public class Student {
+    private static int nextID = 1;
+
     private String name;
     private int studentID;
     private List<Enrollment> courses;
 
-    public Student(String name, int studentID, List<Enrollment> courses) {
+    public Student(String name, List<Enrollment> courses) {
         this.name = name;
-        this.studentID = studentID;
+        this.studentID = nextID++;
         this.courses = courses;
     }
 
