@@ -6,9 +6,9 @@ import java.util.List;
 public class Student {
     private static int nextID = 1;
 
+    private final int studentID;
+    private final List<Enrollment> courses;
     private String name;
-    private int studentID;
-    private List<Enrollment> courses;
 
     public Student(String name) {
         this.name = name;
@@ -16,20 +16,8 @@ public class Student {
         this.courses = new LinkedList<Enrollment>();
     }
 
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
     public int getStudentID() {
         return studentID;
-    }
-
-    public void setStudentID(int studentID) {
-        this.studentID = studentID;
     }
 
     public List<Enrollment> getCourses() {
@@ -38,6 +26,14 @@ public class Student {
 
     public void addCourse(Enrollment enrollment) {
         this.courses.add(enrollment);
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 
     @Override
