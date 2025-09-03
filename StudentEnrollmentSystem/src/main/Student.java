@@ -1,5 +1,6 @@
 package main;
 
+import java.util.LinkedList;
 import java.util.List;
 
 public class Student {
@@ -9,10 +10,10 @@ public class Student {
     private int studentID;
     private List<Enrollment> courses;
 
-    public Student(String name, List<Enrollment> courses) {
+    public Student(String name) {
         this.name = name;
         this.studentID = nextID++;
-        this.courses = courses;
+        this.courses = new LinkedList<Enrollment>();
     }
 
     public String getName() {
@@ -35,8 +36,9 @@ public class Student {
         return courses;
     }
 
-    public void setCourses(List<Enrollment> courses) {
-        this.courses = courses;
+    public void addCourse(Enrollment enrollment) {
+        this.courses.add(enrollment);
+    }
 
     @Override
     public String toString() {
