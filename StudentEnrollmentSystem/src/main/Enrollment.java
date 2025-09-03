@@ -1,9 +1,9 @@
 package main;
 
 public class Enrollment {
-    private Course course;
+    private final Course course;
+    private final String semester;
     private int section;
-    private String semester;
     private float grade;
 
     public Enrollment(Course course, int section, String semester, float grade) {
@@ -17,8 +17,8 @@ public class Enrollment {
         return course;
     }
 
-    public void setCourse(Course course) {
-        this.course = course;
+    public String getSemester() {
+        return semester;
     }
 
     public int getSection() {
@@ -27,14 +27,6 @@ public class Enrollment {
 
     public void setSection(int section) {
         this.section = section;
-    }
-
-    public String getSemester() {
-        return semester;
-    }
-
-    public void setSemester(String semester) {
-        this.semester = semester;
     }
 
     public float getGrade() {
