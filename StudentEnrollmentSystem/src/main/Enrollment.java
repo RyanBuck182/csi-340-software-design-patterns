@@ -44,4 +44,14 @@ public class Enrollment {
     public void setGrade(float grade) {
         this.grade = grade;
     }
+
+    @Override
+    public String toString() {
+        return "Enrollment{" +
+                "course=" + course +
+                ", section=" + section +
+                ", semester='" + semester + '\'' +
+                ", grade=" + grade +
+                '}';
+    }
 }

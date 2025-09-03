@@ -37,5 +37,13 @@ public class Student {
 
     public void setCourses(List<Enrollment> courses) {
         this.courses = courses;
+
+    @Override
+    public String toString() {
+        return "Student{" +
+                "name='" + name + '\'' +
+                ", studentID=" + studentID +
+                ", courses=" + courses +
+                '}';
     }
 }
