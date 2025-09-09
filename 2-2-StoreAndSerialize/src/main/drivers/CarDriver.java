@@ -6,8 +6,8 @@ import java.io.IOException;
 import java.io.OutputStreamWriter;
 
 public class CarDriver extends Driver {
-    public CarDriver(String name, int age, Car vehicle) {
-        super(name, age, vehicle);
+    public CarDriver(String name, int age) {
+        super(name, age);
     }
 
     public void store() {

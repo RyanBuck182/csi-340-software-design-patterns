@@ -10,11 +10,9 @@ import java.io.OutputStreamWriter;
 public abstract class Driver implements Storable, Serializable {
     public String name;
     public int age;
-    public Vehicle vehicle;
 
-    public Driver(String name, int age, Vehicle vehicle) {
+    public Driver(String name, int age) {
         this.name = name;
         this.age = age;
-        this.vehicle = vehicle;
     }
 }

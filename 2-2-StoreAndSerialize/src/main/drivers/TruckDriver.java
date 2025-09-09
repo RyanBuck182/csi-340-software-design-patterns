@@ -6,8 +6,8 @@ import java.io.IOException;
 import java.io.OutputStreamWriter;
 
 public class TruckDriver extends Driver {
-    public TruckDriver(String name, int age, Truck vehicle) {
-        super(name, age, vehicle);
+    public TruckDriver(String name, int age) {
+        super(name, age);
     }
 
     public void store() {
