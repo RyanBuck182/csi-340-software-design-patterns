@@ -15,7 +15,16 @@ public class CarDriver extends Driver {
     }
 
     public void serializeToXML(OutputStreamWriter writer) throws IOException {
-        // serialize to XML
+        String serializedStr = String.format(
+                """
+                <CarDriver>
+                    <name>%s</name>
+                    <age>%d</age>
+                </CarDriver>
+                """,
+                name, age);
+
+        writer.write(serializedStr);
     }
 
     public void serializeToJSON(OutputStreamWriter writer) throws IOException {

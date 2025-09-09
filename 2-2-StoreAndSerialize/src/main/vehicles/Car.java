@@ -13,7 +13,17 @@ public class Car extends Vehicle {
     }
 
     public void serializeToXML(OutputStreamWriter writer) throws IOException {
-        // serialize to XML
+        String serializedStr = String.format(
+                """
+                <Car>
+                    <make>%s</make>
+                    <model>%s</model>
+                    <vin>%s</vin>
+                </Car>
+                """,
+                make, model, vin);
+
+        writer.write(serializedStr);
     }
 
     public void serializeToJSON(OutputStreamWriter writer) throws IOException {

@@ -15,7 +15,16 @@ public class TruckDriver extends Driver {
     }
 
     public void serializeToXML(OutputStreamWriter writer) throws IOException {
-        // serialize to XML
+        String serializedStr = String.format(
+                """
+                <TruckDriver>
+                    <name>%s</name>
+                    <age>%d</age>
+                </TruckDriver>
+                """,
+                name, age);
+
+        writer.write(serializedStr);
     }
 
     public void serializeToJSON(OutputStreamWriter writer) throws IOException {
