@@ -10,7 +10,7 @@ public class CarDriver extends Driver {
 
     @Override
     public void store() {
-        System.out.println("TruckDriver has been stored.");
+        System.out.println("CarDriver has been stored.");
     }
 
     @Override
