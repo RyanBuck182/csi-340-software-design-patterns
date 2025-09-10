@@ -33,7 +33,7 @@ public class Truck extends Vehicle {
                     "type": "Truck",
                     "make": "%s",
                     "model": "%s",
-                    "vin": %d,
+                    "vin": %d
                 }
                 """,
                 make, model, vin);

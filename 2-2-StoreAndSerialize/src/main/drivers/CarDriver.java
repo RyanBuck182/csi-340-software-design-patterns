@@ -31,7 +31,7 @@ public class CarDriver extends Driver {
                 {
                     "type": "CarDriver",
                     "name": "%s",
-                    "age": %d,
+                    "age": %d
                 }
                 """,
                 name, age);
