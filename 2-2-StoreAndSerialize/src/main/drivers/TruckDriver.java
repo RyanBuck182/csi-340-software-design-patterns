@@ -28,6 +28,16 @@ public class TruckDriver extends Driver {
     }
 
     public void serializeToJSON(OutputStreamWriter writer) throws IOException {
-        // serialize to JSON
+        String serializedStr = String.format(
+                """
+                {
+                    "type": "TruckDriver",
+                    "name": "%s",
+                    "age": %d,
+                }
+                """,
+                name, age);
+
+        writer.write(serializedStr);
     }
 }

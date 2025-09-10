@@ -26,7 +26,18 @@ public class Truck extends Vehicle {
         writer.write(serializedStr);
     }
 
-    public void serializeToJSON(OutputStreamWriter writer) {
-        // serialize to JSON
+    public void serializeToJSON(OutputStreamWriter writer) throws IOException {
+        String serializedStr = String.format(
+                """
+                {
+                    "type": "Truck",
+                    "make": "%s",
+                    "model": "%s",
+                    "vin": %d,
+                }
+                """,
+                make, model, vin);
+
+        writer.write(serializedStr);
     }
 }
