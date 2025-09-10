@@ -1,3 +1,4 @@
+// Ryan Buck
 package main.soloacts;
 
 public class StageJump implements SoloAct {

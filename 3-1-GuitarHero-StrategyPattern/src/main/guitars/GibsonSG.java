@@ -1,3 +1,4 @@
+// Ryan Buck
 package main.guitars;
 
 public class GibsonSG implements Guitar {
