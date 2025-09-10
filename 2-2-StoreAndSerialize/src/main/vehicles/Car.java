@@ -8,10 +8,12 @@ public class Car extends Vehicle {
         super(make, model, vin);
     }
 
+    @Override
     public void store() {
         System.out.println("Car has been stored.");
     }
 
+    @Override
     public void serializeToXML(Writer writer) throws IOException {
         String serializedStr = String.format(
                 """
@@ -26,6 +28,7 @@ public class Car extends Vehicle {
         writer.write(serializedStr);
     }
 
+    @Override
     public void serializeToJSON(Writer writer) throws IOException {
         String serializedStr = String.format(
                 """

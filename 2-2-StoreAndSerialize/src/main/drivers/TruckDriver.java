@@ -8,10 +8,12 @@ public class TruckDriver extends Driver {
         super(name, age);
     }
 
+    @Override
     public void store() {
         System.out.println("TruckDriver has been stored.");
     }
 
+    @Override
     public void serializeToXML(Writer writer) throws IOException {
         String serializedStr = String.format(
                 """
@@ -25,6 +27,7 @@ public class TruckDriver extends Driver {
         writer.write(serializedStr);
     }
 
+    @Override
     public void serializeToJSON(Writer writer) throws IOException {
         String serializedStr = String.format(
                 """
