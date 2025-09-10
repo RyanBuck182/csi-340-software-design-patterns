@@ -1,7 +1,5 @@
 package main.drivers;
 
-import main.vehicles.Truck;
-
 import java.io.IOException;
 import java.io.OutputStreamWriter;
 

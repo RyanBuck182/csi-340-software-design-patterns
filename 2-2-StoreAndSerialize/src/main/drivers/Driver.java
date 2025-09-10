@@ -2,10 +2,6 @@ package main.drivers;
 
 import main.Serializable;
 import main.Storable;
-import main.vehicles.Vehicle;
-
-import java.io.IOException;
-import java.io.OutputStreamWriter;
 
 public abstract class Driver implements Storable, Serializable {
     public String name;
