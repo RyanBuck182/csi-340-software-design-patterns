@@ -11,7 +11,7 @@ public class TruckDriver extends Driver {
     }
 
     public void store() {
-        // store the TruckDriver
+        System.out.println("TruckDriver has been stored.");
     }
 
     public void serializeToXML(OutputStreamWriter writer) throws IOException {

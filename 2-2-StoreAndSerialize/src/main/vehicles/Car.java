@@ -9,7 +9,7 @@ public class Car extends Vehicle {
     }
 
     public void store() {
-        // store the Car
+        System.out.println("Car has been stored.");
     }
 
     public void serializeToXML(OutputStreamWriter writer) throws IOException {
