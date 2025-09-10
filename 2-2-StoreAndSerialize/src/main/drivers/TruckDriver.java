@@ -1,7 +1,7 @@
 package main.drivers;
 
 import java.io.IOException;
-import java.io.OutputStreamWriter;
+import java.io.Writer;
 
 public class TruckDriver extends Driver {
     public TruckDriver(String name, int age) {
@@ -12,7 +12,7 @@ public class TruckDriver extends Driver {
         System.out.println("TruckDriver has been stored.");
     }
 
-    public void serializeToXML(OutputStreamWriter writer) throws IOException {
+    public void serializeToXML(Writer writer) throws IOException {
         String serializedStr = String.format(
                 """
                 <TruckDriver>
@@ -25,7 +25,7 @@ public class TruckDriver extends Driver {
         writer.write(serializedStr);
     }
 
-    public void serializeToJSON(OutputStreamWriter writer) throws IOException {
+    public void serializeToJSON(Writer writer) throws IOException {
         String serializedStr = String.format(
                 """
                 {

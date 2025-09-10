@@ -1,9 +1,9 @@
 package main;
 
 import java.io.IOException;
-import java.io.OutputStreamWriter;
+import java.io.Writer;
 
 public interface Serializable {
-    void serializeToXML(OutputStreamWriter writer) throws IOException;
-    void serializeToJSON(OutputStreamWriter writer) throws IOException;
+    void serializeToXML(Writer writer) throws IOException;
+    void serializeToJSON(Writer writer) throws IOException;
 }

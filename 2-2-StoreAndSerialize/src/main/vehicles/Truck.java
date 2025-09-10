@@ -1,7 +1,7 @@
 package main.vehicles;
 
 import java.io.IOException;
-import java.io.OutputStreamWriter;
+import java.io.Writer;
 
 public class Truck extends Vehicle {
     public Truck(String make, String model, int vin) {
@@ -12,7 +12,7 @@ public class Truck extends Vehicle {
         System.out.println("Truck has been stored.");
     }
 
-    public void serializeToXML(OutputStreamWriter writer) throws IOException {
+    public void serializeToXML(Writer writer) throws IOException {
         String serializedStr = String.format(
                 """
                 <Truck>
@@ -26,7 +26,7 @@ public class Truck extends Vehicle {
         writer.write(serializedStr);
     }
 
-    public void serializeToJSON(OutputStreamWriter writer) throws IOException {
+    public void serializeToJSON(Writer writer) throws IOException {
         String serializedStr = String.format(
                 """
                 {
