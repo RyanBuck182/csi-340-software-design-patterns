@@ -28,6 +28,10 @@ public class Auctioneer implements Publisher {
         return highestBid;
     }
 
+    public Bidder getHighestBidder() {
+        return highestBidder;
+    }
+
     public int getRemainingBids() {
         return remainingBids;
     }
