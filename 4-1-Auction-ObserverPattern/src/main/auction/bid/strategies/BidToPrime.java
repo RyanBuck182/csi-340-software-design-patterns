@@ -32,8 +32,8 @@ public class BidToPrime implements BidStrategy {
     private boolean isPrime(int num) {
         for (int i = 3; i < Math.sqrt(num); i += 2)
             if (num % i == 0)
-                return true;
+                return false;
 
-        return false;
+        return true;
     }
 }
