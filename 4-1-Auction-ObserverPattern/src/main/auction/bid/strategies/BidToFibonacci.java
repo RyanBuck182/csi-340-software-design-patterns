@@ -13,7 +13,7 @@ public class BidToFibonacci implements BidStrategy {
             return 0;
 
         // bid to the fibonacci number
-        return closestFibonacci;
+        return closestFibonacci - topBid;
     }
 
     // Finds the closest fibonacci number that exceeds the given num

@@ -13,7 +13,7 @@ public class BidToPrime implements BidStrategy {
             return 0;
 
         // bid to the prime number
-        return closestPrime;
+        return closestPrime - topBid;
     }
 
     // Finds the closest prime number that exceeds the given num
