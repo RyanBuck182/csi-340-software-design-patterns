@@ -1,6 +1,6 @@
 package main.auction.bid.strategies;
 
-// Bid if top bid is odd
+// Bid if integer part of top bid is odd
 public class BidIfOdd implements BidStrategy {
     @Override
     public double bid(double topBid) {

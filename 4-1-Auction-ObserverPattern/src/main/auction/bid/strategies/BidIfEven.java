@@ -1,6 +1,6 @@
 package main.auction.bid.strategies;
 
-// Bid if top bid is even
+// Bid if integer part of top bid is even
 public class BidIfEven implements BidStrategy {
     @Override
     public double bid(double topBid) {
