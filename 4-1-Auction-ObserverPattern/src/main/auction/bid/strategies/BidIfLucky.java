@@ -1,3 +1,4 @@
+// Ryan Buck
 package main.auction.bid.strategies;
 
 // Bid if top bid contains the digit 7

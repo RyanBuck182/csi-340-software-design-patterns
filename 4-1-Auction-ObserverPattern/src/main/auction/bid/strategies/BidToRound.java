@@ -1,3 +1,4 @@
+// Ryan Buck
 package main.auction.bid.strategies;
 
 // Make the top bid a round number

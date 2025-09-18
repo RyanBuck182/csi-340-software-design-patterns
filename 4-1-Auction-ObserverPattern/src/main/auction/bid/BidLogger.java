@@ -1,3 +1,4 @@
+// Ryan Buck
 // This file was taken from the assignment
 // My only contribution was implementing the Subscriber interface
 

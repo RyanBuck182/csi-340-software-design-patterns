@@ -1,3 +1,4 @@
+// Ryan Buck
 package main.auction.bid.strategies;
 
 // Bid if integer part of top bid is odd

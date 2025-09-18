@@ -1,3 +1,4 @@
+// Ryan Buck
 package main.auction.bid.strategies;
 
 // Bid to the closest fibonacci number
